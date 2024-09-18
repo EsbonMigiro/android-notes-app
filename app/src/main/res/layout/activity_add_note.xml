@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/txtViewAddNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Note"
+        android:textColor="@color/orange"
+
+        android:textSize="24sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:src="@drawable/ic_done"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtViewAddNoteHeading"
+        android:layout_margin="6dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/edtTxtTitle"
+        android:hint="Title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/txtViewAddNoteHeading"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edtTxtContent"
+        android:hint="Content"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtTxtTitle"
+        android:gravity="top"
+        android:fontFamily="@font/poppins"
+        />
+
+
+
+
+</RelativeLayout>
